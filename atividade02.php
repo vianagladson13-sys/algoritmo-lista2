@@ -12,7 +12,7 @@ Uma empresa deseja calcular o salário de um funcionário. Armazene e calcule
 //ENTRADAS
 
 $NomeFuncionario = "Gladson";
-$ValorHoraTraba = 300.00;
+$ValorHoraTraba = 800.00;
 $QuantHorasTrab = 200;
 $SalarioBruto = $QuantHorasTrab * $ValorHoraTraba;
 $SalarioLiquido = 0;
