@@ -21,7 +21,7 @@ $desconto = 0;
 
 
 if ($SalarioBruto > 2500) {
-    $SalarioLiquido = $SalarioBruto - $desconto;
+    $SalarioLiquido = $SalarioBruto -200;
 
 } else {
     $SalarioLiquido = $SalarioBruto;
