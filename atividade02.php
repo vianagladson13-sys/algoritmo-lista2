@@ -11,20 +11,21 @@ Uma empresa deseja calcular o salário de um funcionário. Armazene e calcule
 
 //ENTRADAS
 
-$NomeFuncionario = "Gladson"; 
+$NomeFuncionario = "Gladson";
 $ValorHoraTraba = 300.00;
 $QuantHorasTrab = 200;
-$SalarioBruto = $QuantHorasTrab * $ValorHoraTraba ; 
-
-var_dump($SalarioBruto);
-
-
- if ($desconto = $SalarioBruto > 2500){
-    $desconto = $SalarioBruto - 200;
- }
+$SalarioBruto = $QuantHorasTrab * $ValorHoraTraba;
+$SalarioDesconto = 0;
 
 
 
+
+if ($SalarioBruto > 2500) {
+    $SalarioDesconto = $SalarioBruto - 200;
+}
+
+
+var_dump($SalarioDesconto);
 ?>
 
 <!DOCTYPE html>
