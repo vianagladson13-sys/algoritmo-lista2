@@ -52,12 +52,15 @@ $valorTotalcomDesconto = $ValortotalCompra - $desconto;
 
 <body>
 
-<h2>Notinha fiscal - Compras </h2>
-<br>
-<p><?php echo("PRODUTO: " . $Produto1 . " --> QUANTIDADE: " . $quantidade1 . " -->PREÇO UNITARIO " . $preco1 . " -->TOTAL PRODUTO: " . $TotalProduto1 ); ?></p>
-<p><?php echo("PRODUTO: " . $Produto2 . " --> QUANTIDADE: " . $quantidade2 . " -->PREÇO UNITARIO " . $preco2 . " -->TOTAL PRODUTO: " . $TotalProduto2 ); ?></p>
-<p><?php echo("PRODUTO: " . $Produto3 . " --> QUANTIDADE: " . $quantidade3 . " -->PREÇO UNITARIO " . $preco3 . " -->TOTAL PRODUTO: " . $TotalProduto3 ); ?></p>
-
+    <h2>Notinha fiscal - Compras </h2>
+    <br>
+    <p><?php echo ("PRODUTO: " . $Produto1 . " -> QUANTIDADE: " . $quantidade1 . " -> PREÇO UNITARIO " . $preco1 . " -> TOTAL PRODUTO: " . $TotalProduto1); ?></p>
+    <p><?php echo ("PRODUTO: " . $Produto2 . " -> QUANTIDADE: " . $quantidade2 . " -> PREÇO UNITARIO " . $preco2 . " -> TOTAL PRODUTO: " . $TotalProduto2); ?></p>
+    <p><?php echo ("PRODUTO: " . $Produto3 . " -> QUANTIDADE: " . $quantidade3 . " -> PREÇO UNITARIO " . $preco3 . " -> TOTAL PRODUTO: " . $TotalProduto3); ?></p>
+    <br>
+    <p><?php echo ("VALOR TOTAL: " . $ValortotalCompra); ?></p>
+    <p><?php echo ("VALOR DESCONTO: " . $desconto); ?></p>
+    <p><?php echo ("VALOR FINAL COM DESCONTO: " . $valorTotalcomDesconto); ?></p>
 
 
 
