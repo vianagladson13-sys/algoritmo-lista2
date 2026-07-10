@@ -25,7 +25,7 @@ if ($SalarioBruto > 2500) {
 }
 
 
-var_dump($SalarioDesconto);
+
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +39,14 @@ var_dump($SalarioDesconto);
 
 <body>
 
+
+<h1> Folha de pagamento </h1>
+<br>
+<p><?php echo( " Funcionario: " . $NomeFuncionario);  ?></p>
+<p><?php echo( " Valor por hora: " . $ValorHoraTraba);  ?></p>
+<p><?php echo( " Qtds horas trabalhadas: " . $QuantHorasTrab);  ?></p>
+<p><?php echo( " Valor do desconto:  . R$200")  ?></p>
+<p><?php echo( " Salario liquido: " . $SalarioDesconto)  ?></p>
 </body>
 
 </html>
