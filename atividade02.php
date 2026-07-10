@@ -15,13 +15,16 @@ $NomeFuncionario = "Gladson";
 $ValorHoraTraba = 300.00;
 $QuantHorasTrab = 200;
 $SalarioBruto = $QuantHorasTrab * $ValorHoraTraba;
-$SalarioDesconto = 0;
+$SalarioLiquido = 0;
 
-
+$desconto = 0;
 
 
 if ($SalarioBruto > 2500) {
-    $SalarioDesconto = $SalarioBruto - 200;
+    $SalarioLiquido = $SalarioBruto - $desconto;
+
+} else {
+    $SalarioLiquido = $SalarioBruto;
 }
 
 
@@ -40,13 +43,13 @@ if ($SalarioBruto > 2500) {
 <body>
 
 
-<h1> Folha de pagamento </h1>
-<br>
-<p><?php echo( " Funcionario: " . $NomeFuncionario);  ?></p>
-<p><?php echo( " Valor por hora: " . $ValorHoraTraba);  ?></p>
-<p><?php echo( " Qtds horas trabalhadas: " . $QuantHorasTrab);  ?></p>
-<p><?php echo( " Valor do desconto:  . R$200")  ?></p>
-<p><?php echo( " Salario liquido: " . $SalarioDesconto)  ?></p>
+    <h1> Folha de pagamento </h1>
+    <br>
+    <p><?php echo (" Funcionario: " . $NomeFuncionario);  ?></p>
+    <p><?php echo (" Valor por hora: " . $ValorHoraTraba);  ?></p>
+    <p><?php echo (" Qtds horas trabalhadas: " . $QuantHorasTrab);  ?></p>
+    <p><?php echo (" Valor do desconto:  . R$200")  ?></p>
+    <p><?php echo (" Salario liquido: " . $SalarioLiquido)  ?></p>
 </body>
 
 </html>
