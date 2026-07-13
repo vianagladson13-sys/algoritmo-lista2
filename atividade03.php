@@ -8,8 +8,8 @@
 consumo.
 */
 
-$DistanciaPercorrida = 50;
-$QtdcombustivelConsumido = 3;
+$DistanciaPercorrida = 10;
+$QtdcombustivelConsumido = 13;
 
 $ConsumoMedio = $DistanciaPercorrida / $QtdcombustivelConsumido;
 $Distancia = $QtdcombustivelConsumido + $ConsumoMedio;
@@ -17,7 +17,6 @@ $frase = "";
 if ($ConsumoMedio>= 12 ) {
     $frase = "o veiculo teve um bom consumo";
 }
-
 
 ?>
 <!DOCTYPE html>
