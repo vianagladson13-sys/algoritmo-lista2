@@ -34,7 +34,7 @@ $ValortotalCompra = $TotalProduto1 + $TotalProduto2 + $TotalProduto3;
 $desconto = 0;
 
 if ($ValortotalCompra >= 100.00) {
-    //so executa aqui dentro se obter true no teste acima
+   
     $desconto = $ValortotalCompra * 10 / 100;
 }
 $valorTotalcomDesconto = $ValortotalCompra - $desconto;
