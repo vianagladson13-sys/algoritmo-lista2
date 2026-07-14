@@ -24,6 +24,8 @@ $Taxa = 0;
 
 if ($QtdQuilowattsConsumido > 200) {
     $Taxa = 25.00;
+}  else {
+    $Taxa = 0;
 }
 
 $ValorFinal = $ValorInicial + $Taxa;

@@ -18,6 +18,8 @@ $Bonus = 0;
 
 if ($ValorTotalVendido > 5000.00) {
     $Bonus = 200.00;
+} else {
+    $Bonus = 0;
 }
 $TotalRecebido = $Comissao + $Bonus;
 

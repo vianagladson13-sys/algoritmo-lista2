@@ -16,9 +16,11 @@ $Desconto = 0;
 
 if ($QuantidadeIngressos > 5) {
     $Desconto = $TotalCompra * 0.10; 
+} else {
+    $Desconto = 0;
 }
 
-
+$ValorFinal = $TotalCompra - $Desconto;
 
 
 

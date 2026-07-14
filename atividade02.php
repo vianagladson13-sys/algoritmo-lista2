@@ -6,7 +6,8 @@ Uma empresa deseja calcular o salário de um funcionário. Armazene e calcule
 ● a quantidade de horas trabalhadas.
 ● o salário bruto.
 ● exiba o nome, o salário bruto, o desconto e o salário final.
-● Se o salário bruto for maior que R$ 2.500,00, desconte R$ 200,00.
+● Se o salário bruto for maior que R$ 2.500,00, desconte R$ 200,00.Caso
+contrário, informe que o funcionário não possui desconto.
 */
 
 //ENTRADAS
@@ -14,21 +15,19 @@ Uma empresa deseja calcular o salário de um funcionário. Armazene e calcule
 $NomeFuncionario = "Gladson";
 $ValorHoraTraba = 800.00;
 $QuantHorasTrab = 200;
-$SalarioBruto = $QuantHorasTrab * $ValorHoraTraba;
-$SalarioLiquido = 0;
 
-$desconto = 0;
 
+$SalarioBruto = $ValorHoraTraba * $QuantHorasTrab;
+$Desconto = 0;
+$Frase = "";
 
 if ($SalarioBruto > 2500) {
-    $SalarioLiquido = $SalarioBruto -200;
-
+    $Desconto = 200.00;
 } else {
-    $SalarioLiquido = $SalarioBruto;
+    $Frase = "Funcionário não possui desconto.";
 }
 
-
-
+$SalarioLiquido = $SalarioBruto - $Desconto;
 ?>
 
 <!DOCTYPE html>
@@ -48,8 +47,10 @@ if ($SalarioBruto > 2500) {
     <p><?php echo (" Funcionario: " . $NomeFuncionario);  ?></p>
     <p><?php echo (" Valor por hora: " . $ValorHoraTraba);  ?></p>
     <p><?php echo (" Qtds horas trabalhadas: " . $QuantHorasTrab);  ?></p>
-    <p><?php echo (" Valor do desconto:  . R$200")  ?></p>
-    <p><?php echo (" Salario liquido: " . $SalarioLiquido)  ?></p>
+    <p><?php echo (" Salário bruto:") . $SalarioBruto  ?></p>
+    <p><?php echo ("Desconto: " . $Desconto)  ?></p>
+    <p><?php echo ("Salario final: " . $SalarioLiquido)  ?></p>
+    <p><?php echo $Frase;  ?></p>
 </body>
 
 </html>

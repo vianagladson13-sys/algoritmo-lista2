@@ -13,14 +13,17 @@ $NomeDoProduto = "bacozim";
 $Preco = 20.00;
 $Quantidade = 200;
 
-$ValorCompras = $Quantidade * $Preco; 
+$Subtotal = $Quantidade * $Preco;
 
+$Frete = 20.00;
 
-$Frete = 0;
-if ($ValorCompras >200) {
+if ($Subtotal > 200) {
+    $Frete = 0;
+} else {
     $Frete = 20.00;
 }
 
+$ValorFinal = $Subtotal + $Frete;
 ?>
 
 <!DOCTYPE html>
@@ -34,10 +37,12 @@ if ($ValorCompras >200) {
 
 <body>
     <h3>Pedido de bacozim</h3>
-    <P><?php echo ("Nome do hospede: " . $NomeHospede);  ?></P>
-    <P><?php echo ("Valor inicial: " . $ValorInicial);  ?></P>
-    <P><?php echo ("Desconto: " . $Desconto);  ?></P>
-    <P><?php echo ("Valor Final: " . $ValorFinal);  ?></P>
+    <P><?php echo ("Produto: " . $NomeDoProduto);  ?></P>
+    <P><?php echo ("Preço: " . $Preco);  ?></P>
+    <P><?php echo ("Quantidade: " . $Quantidade);  ?></P>
+    <P><?php echo ("Subtotal: " . $Subtotal);  ?></P>
+    <P><?php echo ("Frete: " . $Frete);  ?></P>
+    <P><?php echo ("Valor final: " . $ValorFinal);  ?></P>
 </body>
 
 </html>

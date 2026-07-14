@@ -20,7 +20,10 @@ $ValorInicial = $ValorDiaria * $QtdDiaria;
 $Desconto = 0;
 if ($QtdDiaria >= 5) {
     $Desconto = 100.00;
+} else {
+    $Desconto = 0;
 }
+
 $ValorFinal = $ValorInicial - $Desconto;
 
 ?>
